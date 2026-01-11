@@ -1,0 +1,39 @@
+# Face Recognition Configuration
+
+# Camera settings
+camera:
+  index: 0                    # Camera device index
+  width: 640                  # Capture width
+  height: 480                 # Capture height
+  fps: 30                     # Frames per second
+
+# Face detection
+detection:
+  model: "hog"                # "hog" (faster) or "cnn" (more accurate)
+  scale_factor: 0.5           # Scale frame for faster processing
+  min_neighbors: 5            # Detection sensitivity
+
+# Face recognition
+recognition:
+  tolerance: 0.6              # Lower = more strict (0.4-0.6 recommended)
+  model: "large"              # "small" or "large" (more accurate)
+
+# Application settings
+application:
+  save_unknown_faces: true    # Save faces marked as unknown
+  log_recognition: true       # Log all recognition events
+  max_log_files: 10           # Maximum number of log files to keep
+  image_quality: 95           # JPEG quality (1-100)
+
+# Database settings
+database:
+  auto_save: true             # Auto-save after adding faces
+  backup_count: 5             # Number of backups to keep
+  backup_interval: 7          # Days between backups
+
+# Display settings
+display:
+  show_fps: true              # Show FPS counter
+  show_confidence: true       # Show confidence percentage
+  highlight_color: "green"    # Color for recognized faces
+  unknown_color: "red"        # Color for unknown faces

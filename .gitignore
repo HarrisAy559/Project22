@@ -1,0 +1,62 @@
+
+## **📄 7. .gitignore**
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Dataset and models
+dataset/
+known_faces/encodings.pkl
+known_faces/metadata.json
+known_faces/thumbnails/
+unknown_faces/
+models/
+
+# Logs
+logs/*.log
+logs/*.csv
+!logs/.gitkeep
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Termux
+termux-backup/
+termux-cache/
+
+# Temporary files
+*.tmp
+*.temp
+test.jpg
