@@ -15,7 +15,7 @@ A complete face recognition system designed specifically for Android Termux.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/face-recognition-termux.git
+git clone https://github.com/HarrisAy559/Project22.git
 cd face-recognition-termux
 
 # Make setup script executable
